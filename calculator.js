@@ -1,13 +1,37 @@
 function sum(a, b) {
-  return;
+  if (!a && !b) {
+    return 0;
+  } else if (!a) {
+    a = 0;
+    return a + b;
+  } else if (!b) {
+    b = 0;
+    return a + b;
+  } else if (a && b) {
+    return a + b;
+  }
+  return a + b;
 }
 
 function subtract(a, b) {
-  return;
+  if (!a && !b) {
+    return 0;
+  } else if (!a) {
+    a = 0;
+    return a - b;
+  } else if (!b) {
+    b = 0;
+    return a - b;
+  }
+
+  return a - b;
 }
 
 function divide(a, b) {
-  return;
+  if (a === 0 || b === 0) {
+    return error;
+  }
+  return a / b;
 }
 
 function multiply(a, b) {
